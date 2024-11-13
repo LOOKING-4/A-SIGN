@@ -2,7 +2,12 @@
 <html>
 <body>
 
-<img src="{{ collect(File::glob('signs/*.png', GLOB_BRACE))->random() }}">
-
+function random_pic($dir = 'signs')
+{
+    $files = glob($dir . '/*.*');
+    $file = array_rand($files);
+    return $files[$file];
+}
+  
 </body>
 </html>
