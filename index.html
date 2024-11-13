@@ -2,9 +2,7 @@
 <html>
 <body>
 
-<?php
-echo "My first PHP script!";
-?> 
+<img src="{{ collect(File::glob('signs/*.png', GLOB_BRACE))->random() }}">
 
 </body>
 </html>
