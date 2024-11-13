@@ -6,7 +6,7 @@
   <script type="text/javascript">
     ImageArray = new Array();
     ImageArray[0] = 'signs/IMG_1.png';
-    ImageArray[1] = '/signs/IMG_2.png';  
+    ImageArray[1] = 'signs/IMG_2.png';  
 
 function getRandomImage() {
     var num = Math.floor( Math.random() * 2);
@@ -17,7 +17,9 @@ function getRandomImage() {
 </script>
 </head>
 <body onload="getRandomImage()">
+<center>
 <div id="randImage"></div>
+</center>
   
 </body>
 </html>
